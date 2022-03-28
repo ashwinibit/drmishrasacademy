@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
+*{
+    font-size: 20px;
+    font-size: 1.33333vw;
+    font-family: "Twentieth Century W01",Futura,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    line-height: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    
+
+}
+
+/* body{
+  overflow-x: hidden
+} */
+
+
+a{
+  color: inherit;
+  text-decoration: none;
+
+}
+a:hover{
+  color: inherit;
+  text-decoration: none;
+}
+
+.all{
+  width: 100%;
+}
+
+
+
+
+.sidebar{
+  background-color: #231f20;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  z-index: 1000;
+  float: left;
+  width: 4%;
+
+}
+
+.sidebar button{
+  background-color: #cca69a;
+  /* left: 1%; */
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 4px solid #231f20;
+  margin-top: 46vh;
+}
+
+.sidebar button span{
+  background-color: #231f20;
+  width: 80%;
+  height: 3px;
+  display: block;
+  padding: 0px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.main{
+    /* background-color: #ff0040; */
+    position: relative;
+    width: 96%;
+    /* height: 100vh; */
+    float: right;
+}
+
+.d1{
+    background-color: #fce373;
+    text-align: center;
+    padding: 0 !important;
+    /* min-height: 0; */
+    z-index: 15;
+    min-height: 60vh;
+    width: 100%;
+}
+.logo{
+    font-size: 5.3vw;
+    letter-spacing: 0.045em;
+    line-height: 1em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-style: italic;
+}
+
+.logo_message span{
+    font-family: 'Cairo', sans-serif;
+    font-size: 7vw;
+    line-height: 1.2em;
+    letter-spacing: 0.129em;
+    font-weight: 400;
+    padding-top: 2%;
+}
+
+
+/* ---- */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 5%;
+    margin-top: 30px;
+  }
+  
+  /* Caption text */
+  .slideshow-container .text {
+    font-size: 25px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+ 
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .slideshow-container .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* ---- */
+
+.d2{
+    background-color: #cca69a;
+    text-align: center;
+    padding: 0 !important;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.d2 .contain{
+  width: 100%;
+  background-color: #231f20;
+  display: flex;
+}
+
+.d2 .contain .lside{
+  width: 20%;
+  float: left;
+
+}
+
+.d2 .contain .rside{
+  width: 80%;
+  float: right;
+  float: right;
+
+  
+}
+
+
+
+.d3{
+  background-color: #f37449db;
+  text-align: center;
+  height: 100vh;
+  min-width: 100%;
+}
+
+.d3 .heading{
+  font-size: 4.3vw;
+  padding-top: 50px;
+  height: 20%;
+}
+
+
+
+
+
+.d3 .d3_container{
+  height: 80%;
+  /* padding: 50px; */
+}
+.d3 .d3_container .d3_container_element1{
+  width: 50%;
+  height: 50%;
+  float: left;
+  /* background-color: #9cd08e; */
+}
+
+.d3 .d3_container .d3_container_element2{
+  width: 50%;
+  height: 50%;
+  float: left;
+  /* background-color: #cca69a; */
+}
+
+.d3 .d3_container .d3_container_element3{
+  width: 50%;
+  height: 50%;
+  float: left;
+  /* background-color: blueviolet; */
+}
+
+.d3 .d3_container .d3_container_element4{
+  width: 50%;
+  height: 50%;
+  float: left;
+  /* background-color: yellowgreen; */
+}
+.d3 .card{
+  width: 200px;
+}
+
+.service{
+  top: 50%;
+  position: relative;
+  bottom: 50%;
+  transform: translate(0%,-50%);
+}
+.service img{
+  width: 100px;
+}
+.service div{
+  font-size: 30px;
+}
+
+.service .service_data{
+  width: 80%;
+  /* height: 50px; */
+  /* background-color: #cca69a; */
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.service .service_data:hover{
+  scale: 1.2;
+/* background-color: #231f205e; */
+color: black;
+}
+
+.d4{
+  background-color: #d9f349db;
+  text-align: center;
+  height: 50vh;
+  min-width: 100%;
+}
+
+
+/* .d5{
+  background-color: #d9f349db;
+  height: 35px;
+  left: 46%;
+  position: absolute;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-size: 2.2vw;
+  line-height: 0em;
+  letter-spacing: 0.237em;
+  font-weight: 400;
+
+} */
+
+
+
+
+/* 
+<img src="./img/people/drm.png" alt="DRM" style="width:100%">
+                <h2>Dr. Dhananjay R. Mishra</h2>
+                <p class="title">CEO & Founder</p>
+                <p>National Institute of Technology Raipur</p>
+
+<a href="https://www.linkedin.com/in/dr-dhananjay-r-mishra-1411704a/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+<a href="https://twitter.com/DrDRMUP" target="_blank"><i class="fa fa-twitter"></i></a>  
+<a href="https://scholar.google.co.in/citations?user=wlFVCWoAAAAJ&hl=en" target="_blank"><img src="./img/social/icons8-google-scholar.svg" alt=""></a>  
+<a href="https://orcid.org/my-orcid?orcid=0000-0002-5107-0012" target="_blank"><img src="./img/social/ORCID_iD.svg" alt="" width="24px"></a> 
+
+
+*/
+

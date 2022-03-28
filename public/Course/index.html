@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!--  -->
+    <title>Course</title>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="z-index: 2;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="../">DMA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../">HOME</a></li>
+            <li><a href="../">SERVICES</a></li>
+            <li><a href="#team">About Us</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="jumbotron container-fluid">
+      <h1>Courses</h1> 
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 bg-grey" style="display: flex;">
+                <div class="col-sm-11">
+                    <h2>Technical Course</h2>
+                </div>
+                <div class="col-sm-1 justify-content-center">
+                    <a href="#listOfCources" data-toggle="collapse" class="btn btn-light" style=" margin-top: 15px;">
+                        <i style="color: #FF5733;" onclick="expandData(this)" class="fa fa-minus"></i>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="col-sm-12 justify-content-left" id="listOfCources"> 
+                <div type="button" class="col-sm-4 text-center btn btn-light" data-toggle="modal" data-target="#TMA">
+                    <span>
+                        <img src="../img/courses/line-chart-svgrepo-com.svg" alt="" width="100px">
+                    </span>
+                    <h4>Techno Market Analysis</h4>   
+                </div>
+                <div type="button" class="col-sm-4 text-center btn btn-light" data-toggle="modal" data-target="#solidWorks">
+                  <span>
+                      <img src="../img/courses/solidwork.png" alt="" width="100px">
+                  </span>
+                  <h4>Beginners guide to Solidworks</h4>   
+              </div>
+            </div>
+            <!-- --------------------- -->
+            <div class="modal fade" id="TMA" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="justify-content: center;">
+                  <div class="modal-header" style="background-color: #FF5733;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color: white !important;">Techno Market Analysis</h4>
+                  </div>
+                  <div class="modal-body popND">
+                    <span class="popNDLeft">
+                      <h4>About This Course</h4>
+                      <p>This course will cover following topics</p>
+                      <ul>
+                        <li>Background</li>
+                        <li>Introducing Technical Analysis</li>
+                        <li>The Chart Types</li>
+                        <li>Getting Started with Candlesticks</li>
+                        <li>Single Candlestick patterns (Part 1)</li>
+                        <li>Single Candlestick patterns (Part 2)</li>
+                        <li>Single Candlestick patterns (Part 3)</li>
+                        <li>Multiple candlestick patterns (Part 1)</li>
+                        <li>Multiple Candlestick Patterns (Part 2)</li>
+                        <li>Multiple Candlestick Patterns (Part 3)</li>
+                        <li>The Support and Resistance, Price action</li>
+                        <li>Chart analysis using and identification of brake out using Volumes</li>
+                        <li>Chart analysis using leading and lagging indicators (Part 1)</li>
+                        <li>Chart analysis using leading and lagging indicators (Part 2)</li>
+                        <li>Chart analysis using leading and lagging indicators (Part 3)</li>
+                        <li>Chart analysis using leading and lagging indicators (Part 4)</li>
+                        <li>Chart analysis using leading and lagging indicators (Part 5)</li>
+                        <li>Chart analysis using leading and lagging indicators (Part 6)</li>
+                      </ul>
+                    </span>
+                    <span class="popNDRight justify-content-center">
+                      <span>
+                        <h4>Scan QR Code to pay via UPI</h4>
+                        <img src="../img/qrCode/technical.svg" style="width: 100%;">
+                      </span>
+                      <hr>
+                      <br>
+                      <span>
+                        <form>
+                          <h4>Pay by Other Methods</h4>
+                          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_I4Z99uZ6UjJCOQ" async> </script>
+                        </form>
+                      </span>
+                    </span>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------- -->
+
+            <!-- solidworkDetails -->
+            <div class="modal fade" id="solidWorks" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="justify-content: center;">
+                  <div class="modal-header" style="background-color: #FF5733;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color: white !important;">Beginners guide to Solidworks</h4>
+                  </div>
+                  <div class="modal-body popND">
+                    <span class="popNDLeft">
+                      <h4>About This Course</h4>
+                      <p>This course will cover following topics</p>
+                      <ul>
+                        <li>Introduction to 3D modelling</li>
+                        <li>Basics and Introduction of Solidworks</li>
+                        <li>Learning to Use Revolve and Spline Tool</li>
+                        <li>Applying Relations and patterns in Solidworks</li>
+                        <li>Using Pierce relations and understanding different planes</li>
+                        <li>Understanding curves: projected and composite</li>
+                        <li>Sheet metal basics</li>
+                        <li>Assembly in Solidworks</li>
+                        <li>Rendering into a photorealistic image using Solidworks Visualize</li>
+
+                       
+                      </ul>
+                    </span>
+                    <span class="popNDRight justify-content-center">
+                      <span>
+                        <h4>Scan QR Code to pay via UPI</h4>
+                        <img src="../img/qrCode/technical.svg" style="width: 100%;">
+                      </span>
+                      <hr>
+                      <br>
+                      <span>
+                        <form>
+                          <h4>Pay by Other Methods</h4>
+                          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_I4Z99uZ6UjJCOQ" async> </script>
+                        </form>
+                      </span>
+                    </span>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+
+
+        </div>
+
+
+        
+
+    </div>
+    
+    <div id="contact" class="container-fluid bg-grey slideanim">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Kotav UP, INDIA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +91 9893808251</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> drmishrasacademy@gmail.com</p>
+          </div>
+          <div class="col-sm-7 slideanim">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <!-- <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p> -->
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script>
+        function expandData(x) {
+          x.classList.toggle("fa-plus");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@media only screen and (max-width: 700px) {
+
+    
+    .all{
+        width: 100%;
+        display: block;
+      }
+      
+      
+      
+      
+      .sidebar{
+        width: 100%;
+        height: 45px;
+        bottom: 0;
+      
+      }
+
+        .sidebar button{
+       
+        margin-top: -10px;
+        margin-left: 43%;
+
+      }
+    
+
+
+      .main{
+          display: block;
+        /* background-color: #ff0040; */
+        position: relative;
+        width: 100%;
+        /* height: 100vh; */
+        /* float: right; */
+    }
+    
+    .logo{
+        padding-top: 11%;
+    }
+
+    .logo_message{
+        margin-top: 10%;
+    }
+
+    .d1{
+        min-height: 50vh;
+    }
+
+    .slideshow-container{
+        margin-top: 33%;
+    }
+
+    .d2 .contain{
+      display: block;
+    }
+
+    .d2 .contain .lside{
+      width: 100%;
+
+    }
+
+    .d2 .contain .rside{
+      width: 100%;
+
+    }
+
+    .d3 .heading{
+        font-size: 50px;
+        padding-top: 50px;
+        height: 20%;
+        font-weight: 400;
+      }
+      
+
+  
+}

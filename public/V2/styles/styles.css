@@ -5,9 +5,9 @@
   list-style: none;
 }
 
-:root {
+.light-mode {
   --color-primary: #191d2b;
-  --color-secondary: #ff9933;
+  --color-secondary: #FF5733;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -21,9 +21,9 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
-.light-mode {
+:root {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #FF5733;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -220,6 +220,9 @@ section {
   justify-content: center;
   padding-right: 10rem;
   text-align: center;
+}
+.header-content .right-header .logo img {
+  height: 125px;
 }
 .header-content .right-header .name {
   height: -moz-fit-content;

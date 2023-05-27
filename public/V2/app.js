@@ -17,9 +17,7 @@ async function myRepeat() {
     for(var i = 0; i < arList.length;i++){
         
         console.log(arList[i]);
-        // document.getElementById('shlok').innerHTML = "";
-        // $('#shlok').delay(150).fadeOut(1000);
-        $('#shlok').delay(150).fadeIn(1000);
+        document.getElementById('shlok').innerHTML = "";
         document.getElementById('shlok').innerHTML = arList[i];
         
         await sleep(5000);
@@ -27,7 +25,7 @@ async function myRepeat() {
         
     }
      
-    setInterval(myRepeat,500);
+    setInterval(myRepeat,5000);
 }
 
 

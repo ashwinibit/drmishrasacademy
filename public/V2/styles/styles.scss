@@ -262,6 +262,7 @@ section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 2rem;
+        place-items: center;
         .about-item{
             border: 1px solid var(--color-grey-5);
             border-radius: 5px;
@@ -417,8 +418,12 @@ section{
             display: flex;
             align-items: center;
             justify-content: center;
-            i{
-                font-size: 1.3rem;
+            img{
+                // font-size: 1.3rem;
+                height: inherit;
+                width: inherit;
+                border-radius: 50px;
+              
 
             }
         }

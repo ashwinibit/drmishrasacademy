@@ -1,9 +1,21 @@
 const themeBtn = document.querySelector('.theme-btn');
-    themeBtn.addEventListener('click',()=>{
-        let element = document.body;
-        element.classList.toggle('light-mode')
-    })
+themeBtn.addEventListener('click',()=>{
+    let element = document.body;
+    element.classList.toggle('light-mode')
+})
 
+function readPapersList(){
+    const myForm = document.getElementById("myForm");
+      const csvFile = document.getElementById("csvFile");
+         e.preventDefault();
+         const input = csvFile.files[0];
+         const reader = new FileReader();
+         reader.onload = function (e) {
+            const text = e.target.result;
+            document.write(text);
+         };
+         reader.readAsText(input);
+}
 
 function addPublishedPapers(){
     const t1 = document.getElementById("papersPublished");
@@ -23,5 +35,8 @@ function addPublishedPapers(){
     timelineDiv.appendChild(timelineItem);
     t1.appendChild(timelineDiv);
 }
+
+
+
 
 addPublishedPapers()

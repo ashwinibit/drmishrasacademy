@@ -1,8 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+    // margin: 0;
+    // padding: 0;
+    // box-sizing: border-box;
+    // list-style: none;
     color: var(--color-secondary);
 }
 
@@ -62,9 +62,9 @@
     }
 }
 
-.signIn{
-    display: none;
-}
+
+
+
 
 .login_form{
 	background-color: #fff;
@@ -73,7 +73,7 @@
 	border-top:1px solid #ccc;
 	border-right:1px solid #ccc;
 }
-form{
+.form-group{
 	padding: 0 2em;
     .form__input{
         width: 100%;

@@ -1,4 +1,15 @@
-const firebaseApp = firebase.initializeApp({ 
+const toggle=()=>{
+    var yourUl = document.getElementById("idCreate");
+    
+    yourUl.style.display = yourUl.style.display === 'none' ? '' : 'none';
+
+    var yourUl1 = document.getElementById("signIn");
+    yourUl1.style.display = yourUl.style.display === 'none' ? '' : 'none';
+}
+
+
+
+const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyDOXQh-mt_59tuUoqHl0yi0TDB35K1taeU",
     authDomain: "drmishrasacademy-3037c.firebaseapp.com",
     databaseURL: "https://drmishrasacademy-3037c-default-rtdb.asia-southeast1.firebasedatabase.app",  
@@ -11,12 +22,10 @@ const firebaseApp = firebase.initializeApp({
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
-
-// signUp Function
-
+// Sign up function
 const signUp = () => {
-    const email = document.getElementById("usernameIn").value;
-    const password = document.getElementById("passwordIn").value;
+    const email = document.getElementById("loginMail").value;
+    const password = document.getElementById("loginPassword").value;
     console.log(email, password)
     // firebase code
     firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -35,8 +44,8 @@ const signUp = () => {
 
 // Sign In function
 const signIn = () => {
-    const email = document.getElementById("usernameIn").value;
-    const password = document.getElementById("passwordIn").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
     // firebase code
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((result) => {

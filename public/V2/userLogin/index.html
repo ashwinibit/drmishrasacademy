@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./css/login.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+	<link rel="stylesheet" href="./css/login.css">
 
 	<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
 
 
 </head>
-<body>
-<body>
+
+<body onload="toggle()">
 	<!-- Main Content -->
 	<div class="container-fluid">
 		<div class="row main-content bg-success text-center">
 			<div class="col-md-4 text-center company__info">
 				<span class="company__logo"><img src="img/logo.png" alt=""></span></span>
 			</div>
-			<div class="col-md-8 col-xs-12 col-sm-12 login_form signIn">
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form" id="signIn">
 				<div class="container-fluid">
 					<div class="row">
 						<h2>Log In</h2>
 					</div>
 					<div class="row">
-						<form control="" class="form-group">
+						<div class="form-group">
 							<div class="row">
-								<input type="text" name="username" id="username" class="form__input" placeholder="Username">
+								<input type="text" name="username" id="email" class="form__input" placeholder="Username">
 							</div>
 							<div class="row">
 								<!-- <span class="fa fa-lock"></span> -->
@@ -42,37 +45,39 @@
 								<label for="remember_me">Remember Me!</label>
 							</div>
 							<div class="row">
-								<input type="submit" value="Submit" class="btn">
+								<!-- <input type="submit" value="Submit" class="btn" > -->
+								<button class="btn" onclick="signIn()">Submit</button>
 							</div>
-						</form>
+						</div>
 					</div>
 					<div class="row">
-						<p>Don't have an account? <a href="#">Register Here</a></p>
+						<p>Don't have an account? <a onclick="toggle()" >Register Here</a></p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-8 col-xs-12 col-sm-12 login_form idCreate">
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form" id="idCreate">
 				<div class="container-fluid">
 					<div class="row">
 						<h2>Register</h2>
 					</div>
 					<div class="row">
-						<form control="" class="form-group">
+						<div class="form-group">
 							<div class="row">
-								<input type="text" name="username" id="usernameIn" class="form__input" placeholder="Username">
+								<input type="text" name="username" id="loginMail" class="form__input" placeholder="Username">
 							</div>
 							<div class="row">
 								<!-- <span class="fa fa-lock"></span> -->
-								<input type="password" name="password" id="passwordIn" class="form__input" placeholder="Password">
+								<input type="password" name="password" id="loginPassword" class="form__input" placeholder="Password">
 							</div>
 
 							<div class="row">
-								<input type="submit" value="Register" class="btn" id="createId" onclick="signUp()">
+								<!-- <input type="submit" value="Register" class="btn" onclick="signUp()"> -->
+								<button class="btn" onclick="signUp()">Submit</button>
 							</div>
-						</form>
+						</div>
 					</div>
 					<div class="row">
-						<p>Already have an account? <a href="#">Login Here</a></p>
+						<p>Already have an account? <a onclick="toggle()">Login Here</a></p>
 					</div>
 				</div>
 			</div>

@@ -21,6 +21,7 @@ const firebaseApp = firebase.initializeApp({
 });
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
+const database = firebaseApp.database();
 
 // Sign up function
 const signUp = () => {
